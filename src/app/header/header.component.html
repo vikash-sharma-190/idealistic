@@ -1,0 +1,23 @@
+<div class="row">
+    <div>
+      <div style="display:flex;">
+        <!-- <img src="https://t4.ftcdn.net/jpg/03/21/00/45/360_F_321004587_5dOpzoYEJupNt5jQYJgpw8SffyfRo8Bj.jpg" style="
+    width: 70px;
+    height: 62px;
+"> -->
+        <nav class="nav nav-pills flex-column flex-sm-row" style="
+    align-content: center;">
+
+          <a class="text-sm-center nav-link active" style="width: 160px;margin: 23px 95px 0px;" aria-current="page"
+            href="https://idealistic.stackblitz.io/" (click)="setHome()">Home</a>
+            <button class="text-sm-center nav-link active" style="width: 160px;margin: 24px -48px 0px;" aria-current="page" (click)="allchannel()"
+            >Live Channel</button>
+          <!-- <a class="flex-sm-fill text-sm-center nav-link" href="#">Longer nav link</a>
+  <a class="flex-sm-fill text-sm-center nav-link" href="#">Link</a>
+  <a class="flex-sm-fill text-sm-center nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a> -->
+        </nav>
+      </div>
+      <marquee *ngIf="!statusEnable" behavior="scroll" direction="left" style="font-size: 24px;font-family: 'Lato';font-weight: bold;">Live
+        Cricket : Indian Premier League</marquee>
+    </div>
+  </div>

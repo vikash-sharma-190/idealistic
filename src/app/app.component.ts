@@ -1,12 +1,34 @@
-import { AfterViewInit, Component, VERSION } from "@angular/core";
+import { ApiCallService } from './api-call.service';
+import { AfterViewInit, Component, OnInit, VERSION } from "@angular/core";
 
 @Component({
-  selector: "my-app",
+  selector: "app-root",
   templateUrl: "./app.component.html",
   styleUrls: ["./app.component.css"]
 })
-export class AppComponent implements AfterViewInit {
+export class AppComponent implements AfterViewInit , OnInit{
+  constructor(private apicall:ApiCallService){
+
+  }
   name = "Angular " + VERSION.major;
+  homeStatus:boolean=true;
+  allChannel:boolean=false;
+  ngOnInit(){
+this.apicall.getscore().subscribe(res=>{
+  console.log(res);
+})
+  }
+  ChannelStatus(event) {
+    if (event) {
+      this.allChannel = true;
+      this.homeStatus=false;
+    }
+    else {
+      this.homeStatus = true;
+      this.allChannel = false;
+
+    }
+  }
   ngAfterViewInit() {
     document.getElementsByClassName("header")[0].remove();
   }

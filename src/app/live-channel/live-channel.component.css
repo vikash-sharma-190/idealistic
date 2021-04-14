@@ -1,0 +1,81 @@
+.channels {
+    padding: 40px 30px;
+}
+.channel-card {
+    display: inline;
+    font-size: 16px;
+    color: #35344c;
+
+}
+.logo-card-wrap:hover{
+    border-radius: 4px;
+    box-shadow:0 18px 75px 0 rgb(0 0 125 / 16%);
+    cursor: auto;
+    z-index: 50;
+}
+.inline-top {
+    display: inline-block;
+    vertical-align: top;
+}
+@media only screen and (min-width: 1024px) and (max-width: 1250px){
+.logo-card {
+    width: 20%;
+}
+}
+.logo-card {
+    padding: 0 10px;
+    margin-bottom: 20px;
+    transition: transform .2s;
+}
+.logo-card .logo-card-wrap {
+    border-radius: 42px;
+    padding: 10px;
+    background: #fff;
+    position: relative;
+    width: 301px;
+    height: 180px;
+    cursor: pointer;
+    border: 1px solid #e6e6e6;
+}
+.logo-card .logo-image-container {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.image-card {
+    position: relative;
+    width: 100%;
+}
+.image-card .hidden {
+    visibility: hidden;
+}
+.image-card .original-image {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+}
+.image-card img {
+    width: 100%;
+}
+.logo-card .logo-name {
+    width: 100%;
+    padding-top: 85px;
+    padding-left: 24px;
+    font-weight: 500;
+    color: black;
+}
+.text-overflow {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.vh-center {
+    position: absolute;
+    top: 50%;
+}
+.vh-center {
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
