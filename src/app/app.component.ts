@@ -17,6 +17,9 @@ export class AppComponent implements AfterViewInit , OnInit{
 this.apicall.getscore().subscribe(res=>{
   console.log(res);
 })
+this.apicall.getcurrent().subscribe(res=>{
+  console.log("xml value",res);
+})
   }
   ChannelStatus(event) {
     if (event) {
